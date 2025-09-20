@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="EtgAcademy2025/EtgAcademy2025.csproj" />
+  <Project Path="EtgLibrary/EtgLibrary.csproj" />
+</Solution>
