@@ -10,6 +10,14 @@ namespace EtgAcademy2025
         {
 
 
+             var result = ErrorHandling.CheckFile();
+
+            string phon = "0702 6261";
+            var phone = ErrorHandling.FormatPhone(phon);
+
+
+
+
             var staff = new Manager();
 
             staff.FirstName = "John";
@@ -20,7 +28,7 @@ namespace EtgAcademy2025
 
 
 
-            var dog= new Dog();
+            var dog = new Dog();
             dog.Name = "Buddy";
             dog.Age = 3;
             dog.Speak();
@@ -29,13 +37,13 @@ namespace EtgAcademy2025
             var cat = new Cat();
             cat.Name = "Whiskers";
             cat.Age = 2;
-           
+
             cat.ShowColor();
 
             cat.ShowColor("Blue");
             cat.ShowColor("Bingo", "Blue");
 
-         
+
 
             cat.Speak();
 
@@ -102,7 +110,7 @@ namespace EtgAcademy2025
             Console.WriteLine("Hello, World!");
         }
 
-       
+
         public void ExampleMethod()
         {
 
