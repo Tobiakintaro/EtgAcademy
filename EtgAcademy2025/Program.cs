@@ -8,9 +8,15 @@ namespace EtgAcademy2025
     {
         static void Main(string[] args)
         {
+            var coll = new CollectionClass();
+            coll.ListExample();
 
 
-             var result = ErrorHandling.CheckFile();
+
+
+
+
+            var result = ErrorHandling.CheckFile();
 
             string phon = "0702 6261";
             var phone = ErrorHandling.FormatPhone(phon);
