@@ -8,6 +8,13 @@ namespace EtgAcademy2025
     {
         static void Main(string[] args)
         {
+
+
+            DatabaseClass.DeletePerson();
+
+
+        
+
             var coll = new CollectionClass();
             coll.ListExample();
 
