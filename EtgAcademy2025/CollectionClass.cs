@@ -19,6 +19,18 @@ namespace EtgAcademy2025
                 new Intern { FirstName = "Doe", LastName = "Johnson", University="MIT" }
             };
 
+            var str = "peter";
+
+            string query = $"John " + str;
+            query = $"John {str}";
+
+            var sorted = from p in people where p.FirstName == "John" select new { p.Age, p.Designation }; //linq: language integrated query
+
+
+            var sql= "SELECT Age, Designation FROM people WHERE FirstName = 'John' "    ;
+
+
+
             List<string> names = new List<string>();
             names.Add("John");
             names.Add("Jane");
@@ -32,7 +44,7 @@ namespace EtgAcademy2025
             names.Remove("John");
 
 
-            var ppppp = people.OfType<Programmer>().Select(x => x.Language ).ToList();
+            var ppppp = people.OfType<Programmer>().Select(x => x.Language).ToList();
             var progs1 = people.OfType<Programmer>().ToList().Where(x => x.Language == "C#").ToList();
 
             var ppp = people.Where(x => x.FirstName == "John" && x.LastName == "Doe").Select(x => x.LastName).ToList();
@@ -52,7 +64,7 @@ namespace EtgAcademy2025
             List<Programmer> programmers = prog.Cast<Programmer>().ToList();
 
 
-            var newList= progs.Concat(prog).ToList();
+            var newList = progs.Concat(prog).ToList();
 
 
             List<Programmer> programmers2 = people.Select(x => new Programmer

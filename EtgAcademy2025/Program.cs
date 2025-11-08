@@ -1,13 +1,69 @@
 ﻿using EtgLibrary;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Threading.Tasks;
 
 namespace EtgAcademy2025
 {
     internal class Program
     {
-        static void Main(string[] args)
+      
+
+        static async Task Main(string[] args)
         {
+            
+
+            var Sq = new SpecialSquare();
+
+
+            Bird smalBird = new Hawk();
+
+            smalBird.Fly();
+
+            var birdList = new List<Bird>();
+
+            birdList.Add(new Eagle());
+            birdList.Add(new Hawk());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           await AsynClass.RunAsync();
+
+            Console.WriteLine("Hello World");
+
+           
+Console.Clear();
+
+            DbOps.AddTransaction("123400001");
+            
+
+            DbOps.GetTransactions();
+
+            DbOps.UpdateTransactions("123400001");
+
+            DbOps.GetTransactions();
+            DbOps.AddTransaction("123400002");
+
+            DbOps.GetTransactions();
+
+
+            DbOps.DeleteTransaction("123400001");
+            DbOps.GetTransactions();
+
+
 
 
             DatabaseClass.DeletePerson();
