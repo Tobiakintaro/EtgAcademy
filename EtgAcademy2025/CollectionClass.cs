@@ -6,11 +6,49 @@ using System.Threading.Tasks;
 
 namespace EtgAcademy2025
 {
+    enum Role
+    {
+        Admin,
+        User,
+        Guest
+    }
+
     public class CollectionClass
     {
+        public Person Programmer1()
+        {
+            return new Programmer
+            {
+                FirstName = "John",
+                LastName = "Doe",
+                Age = 30,
+                Language = "C#"
+            };
+          
+        }
+
+
 
         public void ListExample()
         {
+
+            //convert the roles to string array if not already. Get this from the arguments 
+            var list = new string[] { "Admin", "User", "Guest" };
+
+         
+            if (list.Contains(nameof(Role.User)) || list.Contains(nameof(Role.Guest)))
+            {
+                Console.WriteLine("Found");
+            }
+            else
+            {
+                Console.WriteLine("Not Found");
+            }
+
+
+
+
+
 
             List<Person> people = new List<Person>()
             {new Programmer { FirstName = "Peter", LastName = "Ayo", Language="J#" },

@@ -12,7 +12,10 @@ namespace EtgAcademy2025
 
         static async Task Main(string[] args)
         {
-            
+
+
+            var col = new CollectionClass();
+            var prrr = col. Programmer1();
 
             var Sq = new SpecialSquare();
 
