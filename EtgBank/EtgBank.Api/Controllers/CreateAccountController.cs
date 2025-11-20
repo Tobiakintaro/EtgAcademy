@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace EtgBank.API.Controllers
+namespace EtgBank.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
