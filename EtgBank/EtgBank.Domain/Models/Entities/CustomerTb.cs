@@ -14,5 +14,9 @@ namespace EtgBank.Domain.Models.Entities
         public string Password  { get; set; }
         public DateTime CreateDate  { get; set; }
         public DateTime ModifiedDate { get; set; }
+
+        public int TierId { get; set; }
+        public TierTb Tier { get; set; }
+        public ICollection<AccountTb> Accounts { get; set; }
     }
 }

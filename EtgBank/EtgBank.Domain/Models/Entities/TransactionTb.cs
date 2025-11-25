@@ -18,6 +18,9 @@ namespace EtgBank.Domain.Models.Entities
       public string ResponseMessage { get; set; }
       public string TranType { get; set; }
       public string SessionId { get; set; }
+      
+      public int AccountId { get; set; }
+      public AccountTb Account { get; set; }
 
     }
    
