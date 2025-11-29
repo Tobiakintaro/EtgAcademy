@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/WebService/">
+    <Project Path="EtgBank.Api/EtgBank.Api.csproj" />
+    <Project Path="EtgBank.Application/EtgBank.Application.csproj" />
+    <Project Path="EtgBank.Domain/EtgBank.Domain.csproj" />
+    <Project Path="EtgBank.Infrastructure/EtgBank.Infrastructure.csproj" />
+  </Folder>
+</Solution>

@@ -1,16 +1,88 @@
 ﻿using EtgLibrary;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Threading.Tasks;
 
 namespace EtgAcademy2025
 {
     internal class Program
     {
-        static void Main(string[] args)
+      
+
+        static async Task Main(string[] args)
         {
 
 
-             var result = ErrorHandling.CheckFile();
+            var col = new CollectionClass();
+            var prrr = col. Programmer1();
+
+            var Sq = new SpecialSquare();
+
+
+            Bird smalBird = new Hawk();
+
+            smalBird.Fly();
+
+            var birdList = new List<Bird>();
+
+            birdList.Add(new Eagle());
+            birdList.Add(new Hawk());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           await AsynClass.RunAsync();
+
+            Console.WriteLine("Hello World");
+
+           
+Console.Clear();
+
+            DbOps.AddTransaction("123400001");
+            
+
+            DbOps.GetTransactions();
+
+            DbOps.UpdateTransactions("123400001");
+
+            DbOps.GetTransactions();
+            DbOps.AddTransaction("123400002");
+
+            DbOps.GetTransactions();
+
+
+            DbOps.DeleteTransaction("123400001");
+            DbOps.GetTransactions();
+
+
+
+
+            DatabaseClass.DeletePerson();
+
+
+        
+
+            var coll = new CollectionClass();
+            coll.ListExample();
+
+
+
+
+
+
+            var result = ErrorHandling.CheckFile();
 
             string phon = "0702 6261";
             var phone = ErrorHandling.FormatPhone(phon);
