@@ -13,7 +13,7 @@ namespace EtgBank.Infrastructure.Data
         public DataContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<DataContext>();           
-            optionsBuilder.UseSqlServer("Server= DbServer; database=EtgBankDb;user id=sa;password=Welcome123;MultipleActiveResultSets=True;trustServerCertificate=true");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=EtgBankDB;Integrated Security=true;TrustServerCertificate=true;");
             return new DataContext(optionsBuilder.Options);
         }
     }
