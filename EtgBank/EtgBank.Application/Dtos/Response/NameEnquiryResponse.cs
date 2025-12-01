@@ -1,4 +1,4 @@
-﻿using System;
+﻿namespace EtgBank.Application.Dtos.Response
 
 public class NameEnquiryResponse : BaseResponse
 {
