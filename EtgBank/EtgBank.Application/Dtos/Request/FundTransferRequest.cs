@@ -1,4 +1,4 @@
-﻿using System;
+﻿namespace EtgBank.Application.Dtos.Request
 
 public class FundTransferRequest : BaseRequest
 {
