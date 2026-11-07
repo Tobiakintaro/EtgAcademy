@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="EtgAcademy2025/EtgAcademy2025.csproj" />
+  <Project Path="EtgAcademy2026/EtgAcademy2026.csproj" Id="e15663cd-b457-4f0b-9893-1e4403b0da6f" />
   <Project Path="EtgLibrary/EtgLibrary.csproj" />
 </Solution>
